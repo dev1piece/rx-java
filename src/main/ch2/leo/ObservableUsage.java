@@ -2,37 +2,14 @@ package ch2.leo;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
-import utils.Log;
+import utils.LoggingObserver;
 
 import static utils.Log.log;
 
 public class ObservableUsage {
-    private static Observer<Object> observer = new Observer<Object>() {
-        @Override
-        public void onSubscribe(Disposable d) {
-            log("onSubscribe");
-        }
-
-        @Override
-        public void onNext(Object o) {
-            log("onNext -> " + o);
-        }
-
-        @Override
-        public void onError(Throwable e) {
-            log("onNext -> " + e);
-        }
-
-        @Override
-        public void onComplete() {
-            log("onComplete");
-        }
-    };
-
-
-
     public static void main(String[] args) {
+        Observer<Object> observer = new LoggingObserver<>();
+
         log("========= just =========");
         Observable.just(1)
                 .subscribe(observer);
