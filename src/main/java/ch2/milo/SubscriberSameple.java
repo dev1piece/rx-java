@@ -1,4 +1,4 @@
-package milo;
+package ch2.milo;
 
 import io.reactivex.Observable;
 import org.reactivestreams.Subscriber;
