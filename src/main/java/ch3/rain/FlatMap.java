@@ -35,6 +35,11 @@ public class FlatMap {
                 .subscribe(System.out::println);
         TimeUnit.SECONDS.sleep(15);
 
+        Observable
+                .just(1)
+                .flatMap(x -> Observable.empty(), 10)
+                .subscribe();
+
     }
 
 }
