@@ -1,0 +1,4 @@
+package milo;
+
+class Flight {
+}
