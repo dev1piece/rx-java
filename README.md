@@ -25,3 +25,7 @@ RxJava를 활용한 리액티브 프로그래밍
 * 연락없이 참석하지 않으면 별금 5천원
 * 탈퇴는 모두의 합의시 통과
 * 교재 안가져오면 벌금
+
+## Member repsoitory link
+* rhyno [start-rx-java](https://github.com/gregor77/start-rx-java)
+  - 실제로 실행가능한 소스 레파지토리 및 참조 문서 존재
